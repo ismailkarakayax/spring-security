@@ -1,0 +1,13 @@
+version: '4.23.0'
+services:
+    db:
+        image: mysql
+        restart: always
+        container_name: jwt-token
+        environment:
+            MYSQL_ROOT_PASSWORD: 1234
+            MYSQL_DATABASE: jwt-token
+            MYSQL_USER: root
+            MYSQL_PASSWORD: 1234
+        ports:
+            - '3307:3306'
